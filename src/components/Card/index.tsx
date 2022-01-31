@@ -16,11 +16,11 @@ export const Card = ({ cardImage, cardTitle, favorite, onFav }: CardProps) => (
     </Styled.CardImage>
     <Styled.CardTitle>{cardTitle}</Styled.CardTitle>
     <Styled.ButtonsWrapper>
-      <Styled.FavoriteButton onClick={onFav}>
+      <Styled.FavoriteButton aria-label="favorite button" onClick={onFav}>
         {favorite ? (
-          <Favorite size={30} color="#AA0202" />
+          <Favorite aria-label="favorite" size={30} color="#AA0202" />
         ) : (
-          <FavoriteBorder size={30} />
+          <FavoriteBorder size={30} aria-label="not favorite" />
         )}
       </Styled.FavoriteButton>
       <Styled.DetailsButton>Details</Styled.DetailsButton>
