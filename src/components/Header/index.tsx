@@ -2,6 +2,6 @@ import * as Styled from './styles';
 
 export const Header = () => (
   <Styled.Wrapper>
-    <button>favorite</button>
+    <Styled.Button>favorite</Styled.Button>
   </Styled.Wrapper>
 );
