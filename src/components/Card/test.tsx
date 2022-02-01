@@ -9,7 +9,7 @@ const props: CardProps = {
   favorite: false,
 };
 
-describe('<Heading />', () => {
+describe('<Card />', () => {
   it('should render img and title is correctly', () => {
     renderWithTheme(<Card {...props} />);
 
